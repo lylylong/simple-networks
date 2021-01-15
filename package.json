@@ -1,0 +1,26 @@
+{
+  "name": "simple-networks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lylylong/simple-networks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lylylong/simple-networks/issues"
+  },
+  "homepage": "https://github.com/lylylong/simple-networks#readme",
+  "dependencies": {
+    "date-fns": "^2.16.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
+  }
+}
