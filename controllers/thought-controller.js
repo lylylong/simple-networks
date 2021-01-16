@@ -125,24 +125,24 @@ const thoughtController = {
         }
         res.json(dbUserData);
       })
-      .catch((err) => res.status(400).json(err));
+      .catch((err) => {
+        console.log(err);
+        res.json(err);
+      });
   },
 
   // delete a Reaction
   deleteReaction({ params }, res) {
     Thought.findOneAndUpdate(
-      { _id: params.id },
-      { $pull: { reactions: params.reactionId } },
+      { _id: params.thoughtId },
+      { $pull: { reactions: { reactionId: params.reactionId } } },
       { new: true }
     )
-      .then((dbThoughtData) => {
-        if (!dbThoughtData) {
-          res.status(404).json({ message: "No user found with this id!" });
-          return;
-        }
-        res.json(dbThoughtData);
-      })
-      .catch((err) => res.status(400).json(err));
+      .then((dbUserData) => res.json(dbUserData))
+      .catch((err) => {
+        console.log(err);
+        res.json(err);
+      });
   },
 };
 

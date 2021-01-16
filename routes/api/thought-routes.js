@@ -23,13 +23,16 @@ router.route("/:userId").post(createThoughtByUser);
 router.route("/:thoughtId").get(getThoughtById).put(updateThought);
 // router.route("/:thoughtId").delete(deleteThought);
 
-// /api/thoughts//:userId/:thoughtId
-router.route("/:userId/:thoughtId").delete(deleteThoughtByUser);
-
-// /api/thoughts/:id/reactions/:reactionId
+// /api/thoughts/:userId/:thoughtId
 router
-  .route("/:thoughtId/reactions/:reactionId")
-  .post(addReaction)
-  .delete(deleteReaction);
+  .route("/:userId/:thoughtId")
+  .delete(deleteThoughtByUser)
+  .put(addReaction);
+
+/// /api/thoughts/:thoughtId/reactions
+// router.route("/:thoughtId/reactions").post(addReaction);
+
+// /api/thoughts/:userId/:thoughtId/:reactionId
+router.route("/:userId/:thoughtId/:reactionId").delete(deleteReaction);
 
 module.exports = router;
