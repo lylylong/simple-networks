@@ -8,14 +8,16 @@ This social network API can support websites that handle large amounts of unstru
 
 ## Process Video
 
+Please enhance video quality when you are watching.\
 [![Screen Shot 2021-01-16 at 4 22 43 AM](https://user-images.githubusercontent.com/70302749/104834894-c0d99b00-5870-11eb-9ddd-93c86814b815.png)](https://drive.google.com/file/d/1aCycobz8_MXX6lT3XKOY2Y9LAheSImz4/view)
 https://drive.google.com/file/d/1aCycobz8_MXX6lT3XKOY2Y9LAheSImz4/view
 
 ## Installation
 
-- First, I'll need to clone this repo and run "npm i" command to install the npm packages. After that, I will run "npm start" command to invoke the application. I can see the server is started and the Mongoose models can be synced to the MongoDB database.
+First, I'll need to clone this repo and run "npm i" command to install the npm packages. After that, I will run "npm start" command to invoke the application. I can see the server is started and the Mongoose models can be synced to the MongoDB database.
 
-- Second, I will open Insomnia Core and test all routes, for example, "localhost:3000/api/users". All routes are displayed below:
+Second, I will open Insomnia Core and test all routes, for example, "localhost:3000/api/users".\
+All routes are displayed below:
 
 | User Routes      |                             |
 | ---------------- | --------------------------- |
